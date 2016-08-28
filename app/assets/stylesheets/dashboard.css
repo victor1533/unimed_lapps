@@ -1,0 +1,16 @@
+.list-group li{
+	padding-top:31px;
+	padding-bottom:31px;
+	color:#FFFFFF;
+		background:#46be8a;
+
+		border-bottom:1px solid white;
+
+}
+.list-group li:hover{
+	background: #37a978;
+}
+.list-group .bolso{
+
+}
+

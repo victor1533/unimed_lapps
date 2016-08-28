@@ -5,7 +5,7 @@ class CreateItensFatura < ActiveRecord::Migration[5.0]
       t.string :descricao
       t.string :informacoes_prestador
       t.date :data
-
+      
       t.timestamps
     end
   end
