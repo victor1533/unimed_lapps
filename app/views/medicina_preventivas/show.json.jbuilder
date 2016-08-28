@@ -1,0 +1,1 @@
+json.partial! "medicina_preventivas/medicina_preventiva", medicina_preventiva: @medicina_preventiva

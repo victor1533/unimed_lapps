@@ -1,0 +1,1 @@
+json.array! @medicina_preventivas, partial: 'medicina_preventivas/medicina_preventiva', as: :medicina_preventiva

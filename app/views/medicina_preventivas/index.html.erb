@@ -1,0 +1,100 @@
+
+<div class="panel">
+        <div class="panel-body">
+          <div class="nav-tabs-horizontal">
+            <ul class="nav nav-tabs nav-tabs-line" data-plugin="nav-tabs" role="tablist">
+              <li class="active" role="presentation"><a  data-toggle="tab" href="#todos" aria-controls="todos"
+                role="tab">Todos</a></li>
+              <li role="presentation"><a data-toggle="tab" href="#abertos" aria-controls="abertos"
+                role="tab">Aberto</a></li>
+              <li role="presentation"><a  data-toggle="tab" href="#pagas" aria-controls="google_contacts"
+                role="tab">Pagas</a></li>
+            </ul>
+
+            <h3 class="text-center">
+              Selecione uma fatura para mais detalhes
+            </h3>
+            <div class="tab-content">
+              <div class="tab-pane animation-fade active" id="todos" role="tabpanel">
+                <ul class="list-group">
+                  <% current_user.faturas.each do |fatura| %>
+                    <a href = "#" class="list-group-item  waves-effect waves-block waves-classic">
+                      <div class="media" >
+                        <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
+                          <div class="avatar avatar-online">
+                          <p style="font-size:20px;"><%= fatura.data_vencimento %></p>
+                          </div>
+                        </div>
+                        <div class="media-body"  style="padding-left:20px;">
+                          <h4 class="media-heading">
+                          <p style="font-size:20px">R$<%= fatura.valor_total %></p>
+                      </h4>
+                          <p>
+                       <%= fatura.descricao %>                     
+                        </p>
+                        </div>
+                      </div>
+                    </a>
+                   <% end %>
+
+                
+                </ul>
+              </div>
+
+              <div class="tab-pane animation-fade" id="abertos" role="tabpanel">
+                <ul class="list-group">
+              <% current_user.faturas.em_aberto.each do |fatura| %>
+                    <a href = "#" class="list-group-item  waves-effect waves-block waves-classic">
+                      <div class="media" >
+                        <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
+                          <div class="avatar avatar-online">
+                          <p style="font-size:20px;"><%= fatura.data_vencimento %></p>
+                          </div>
+                        </div>
+                        <div class="media-body"  style="padding-left:20px;">
+                          <h4 class="media-heading">
+                          <p style="font-size:20px">R$<%= fatura.valor_total %></p>
+                      </h4>
+                          <p>
+                       <%= fatura.descricao %>                     
+                        </p>
+                        </div>
+                      </div>
+                    </a>
+                   <% end %>
+       
+                </ul>
+              </div>
+
+              <div class="tab-pane animation-fade" id="pagas" role="tabpanel">
+                <ul class="list-group">
+
+                  <% current_user.faturas.pagas.each do |fatura| %>
+                    <a href = "#" class="list-group-item  waves-effect waves-block waves-classic">
+                      <div class="media" >
+                        <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
+                          <div class="avatar avatar-online">
+                          <p style="font-size:20px;"><%= fatura.data_vencimento %></p>
+                          </div>
+                        </div>
+                        <div class="media-body"  style="padding-left:20px;">
+                          <h4 class="media-heading">
+                          <p style="font-size:20px">R$<%= fatura.valor_total %></p>
+                      </h4>
+                          <p>
+                       <%= fatura.descricao %>                     
+                        </p>
+                        </div>
+                      </div>
+                    </a>
+                   <% end %>
+
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
