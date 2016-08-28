@@ -110,34 +110,33 @@
       <div>
         <div>
           <ul class="site-menu">
+              
             <li class="site-menu-item has-sub">
-              <a href="/projects">
+            <%= link_to dashboard_path do %>
                 <i class="site-menu-icon wb-home" aria-hidden="true"></i>
                 <span class="site-menu-title"  style="font-size: large">Inicio</span>
-              </a>
+            <% end %>
             </li>
-          <ul class="site-menu">
             <li class="site-menu-item has-sub">
-              <a href="../faq/faq.html.erb">
+          <%= link_to atendimentos_path do %>
                 <i class="site-menu-icon wb-help" aria-hidden="true"></i>
                 <span class="site-menu-title" style="font-size: large">Perguntas Frequente</span>
-              </a>
+            <% end %>
             </li>
-            <ul class="site-menu">
             <li class="site-menu-item has-sub">
-              <a href="/projects">
+            <%= link_to atendimentos_path do %>
                 <i class="site-menu-icon wb-payment" aria-hidden="true"></i>
                 <span class="site-menu-title" style="font-size: large">Simular gastos</span>
-              </a>
+            <% end %>
             </li>
-          </ul>
-          <ul class="site-menu">
+          
             <li class="site-menu-item has-sub">
-              <a href="/projects">
+          <%= link_to atendimentos_path do %>
                 <i class="site-menu-icon wb-wrench" aria-hidden="true"></i>
                 <span class="site-menu-title" style="font-size: large">Alterar dados</span>
-              </a>
+            <% end %>
             </li>
+            </ul>
         </div>
       </div>
     </div>
