@@ -4,13 +4,13 @@ Rails.application.routes.draw do
 
   resources :beneficiarios	
   resources :faturas	
-    resources :medicos	
+  resources :medicos	
 
   get '/dashboard' => "dashboard#index"
 
   get '/atendimentos' => "atendimentos#index"
   get '/buscas' => "buscas#index"
-  resources :medicos
+  resources :telefones
 
 
 end

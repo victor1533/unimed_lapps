@@ -4,7 +4,6 @@ class TelefonesController < ApplicationController
   # GET /telefones
   # GET /telefones.json
   def index
-    @telefones = Telefone.all
   end
 
   # GET /telefones/1

@@ -1,25 +1,26 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Telefones</h1>
+<div class="panel">
+        <div class="panel-body">
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+                <h4 class="text-center" style="margin-top:10px" >Selecione uma das opções</h4>
 
-  <tbody>
-    <% @telefones.each do |telefone| %>
-      <tr>
-        <td><%= link_to 'Show', telefone %></td>
-        <td><%= link_to 'Edit', edit_telefone_path(telefone) %></td>
-        <td><%= link_to 'Destroy', telefone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          <ul class="list-group" style="height:100%;">
+            <%= link_to faturas_path do %>  
+              <li class="list-group-item waves-effect waves-block waves-classic bolso" href="javascript:void(0)" style="font-size:30px;text-align:center;" >
+                <i class="icon glyphicon glyphicon-earphone pull-left" aria-hidden="true"></i>
+                    Central Unimed </br>
+                    0800 643 0027
+              </li>
+            <% end %>
 
-<br>
+            <%= link_to faturas_path do %>  
+              <li class="list-group-item waves-effect waves-block waves-classic bolso" href="javascript:void(0)" style="font-size:30px;text-align:center;" >
+                <i class="icon glyphicon glyphicon-earphone pull-left" aria-hidden="true"></i>
+                    SAMU - Emergência </br>
+                    192
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
 
-<%= link_to 'New Telefone', new_telefone_path %>
