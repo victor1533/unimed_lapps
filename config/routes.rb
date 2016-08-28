@@ -4,13 +4,13 @@ Rails.application.routes.draw do
 
   resources :beneficiarios	
   resources :faturas	
-<<<<<<< HEAD
     resources :medicos	
 
   get '/dashboard' => "dashboard#index"
 
-=======
-  get '/atendimento' => "atendimento#index"
+  get '/atendimentos' => "atendimentos#index"
+  get '/buscas' => "buscas#index"
   resources :medicos
->>>>>>> 6d7098f6a6a48086a279d91e00c83dbbee770bfc
+
+
 end

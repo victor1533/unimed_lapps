@@ -9,18 +9,12 @@
         <span class="sr-only">Toggle navigation</span>
         <span class="hamburger-bar"></span>
       </button>
-      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
-      data-toggle="collapse">
-        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
-      </button>
+                           <%= image_tag("icon.png", :alt => "...", :class => 'navbar-toggle collapsed') %>
+
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <span class="navbar-brand-text hidden-xs">Flosscoach</span>
+        <span class="navbar-brand-text">Inicio</span>
       </div>
-      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
-      data-toggle="collapse">
-        <span class="sr-only">Toggle Search</span>
-        <i class="icon wb-search" aria-hidden="true"></i>
-      </button>
+
     </div>
     <div class="navbar-container container-fluid">
       <!-- Navbar Collapse -->
@@ -40,12 +34,7 @@
               <span class="sr-only">Toggle fullscreen</span>
             </a>
           </li>
-          <li class="hidden-float">
-            <a class="icon wb-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
-            role="button">
-              <span class="sr-only">Toggle Search</span>
-            </a>
-          </li>
+  
         </ul>
         <!-- End Navbar Toolbar -->
 
@@ -67,9 +56,8 @@
                 <a href="javascript:void(0)" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
               </li>
               <li class="divider" role="presentation"></li>
-              <li role="presentation">
-                <a href="/users/logout" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
-              </li>
+                       <%= image_tag("placeholder.png", :alt => "...", :class => 'cover-image') %>
+
             </ul>
           </li>
         </ul>
@@ -101,9 +89,12 @@
 
         <div class="overlay-panel vertical-align overlay-background">
           <div class="vertical-align-middle">
-                <img src="" />
+          <a class="avatar avatar-lg" href="javascript:void(0)">
 
-            <div class="site-menubar-info">
+          <%= image_tag("5.jpg", :alt => "...", :class => '') %>
+
+          </a>
+            <div class="site-menubar-info" style="width:100%;">
 
               <h5 class="site-menubar-user"> Seja bem vindo</h5>
 

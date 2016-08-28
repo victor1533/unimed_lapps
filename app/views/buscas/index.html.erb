@@ -1,0 +1,39 @@
+
+<div class="panel">
+        <div class="panel-body">
+          
+          <div class="list-group ">
+                  <a class="list-group-item  waves-effect waves-block waves-classic list-group-item-info" href="javascript:void(0)">
+                    <h4 class="list-group-item-heading text-center ">Boa tarde, João!</h4>
+                  </a>
+
+                </div>
+                <h4 class="text-center">O que você deseja hoje?</h4>
+
+          <ul class="list-group" style="height:100%;">
+                <%= link_to faturas_path do %>
+                  <li class="list-group-item waves-effect waves-block waves-classic bolso" href="javascript:void(0)" style="font-size:26px" >
+                   <i class=" icon glyphicon glyphicon-usd pull-left" aria-hidden="true"></i>
+                    Meu Bolso
+                  </li>
+<% end %>
+                <%= link_to faturas_path do %>
+
+                  <li class="list-group-item waves-effect waves-block waves-classic bolso" href="javascript:void(0)" style="font-size:26px" >
+                   <i class="icon fa-stethoscope pull-left" aria-hidden="true"></i>
+                    Atendimento
+                  </li>
+                  <% end %>
+                <%= link_to faturas_path do %>
+
+                  <li class="list-group-item waves-effect waves-block waves-classic bolso" href="javascript:void(0)" style="font-size:26px" >
+                   <i class="icon fa-heartbeat pull-left" aria-hidden="true"></i>
+
+                    Medicina Preventiva
+                  </li>
+                  <% end %>
+
+                </ul>
+        </div>
+      </div>
+

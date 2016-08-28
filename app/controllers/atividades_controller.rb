@@ -4,7 +4,6 @@ class AtividadesController < ApplicationController
   # GET /atividades
   # GET /atividades.json
   def index
-    @atividades = Atividade.all
   end
 
   # GET /atividades/1

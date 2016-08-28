@@ -4,7 +4,6 @@ class AtendimentosController < ApplicationController
   # GET /atendimentos
   # GET /atendimentos.json
   def index
-    @atendimentos = Atendimento.all
   end
 
   # GET /atendimentos/1
