@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor: 1.5
+  descricao: MyString
+  informacoes_prestador: MyString
+  data: 2016-08-27
+
+two:
+  valor: 1.5
+  descricao: MyString
+  informacoes_prestador: MyString
+  data: 2016-08-27

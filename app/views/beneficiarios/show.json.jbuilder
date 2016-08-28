@@ -1,0 +1,1 @@
+json.partial! "beneficiarios/beneficiarios", beneficiarios: @beneficiarios

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor_total: 1.5
+  data_emissao: 2016-08-27
+  data_vencimento: 2016-08-27
+  beneficiario_id: 1
+
+two:
+  valor_total: 1.5
+  data_emissao: 2016-08-27
+  data_vencimento: 2016-08-27
+  beneficiario_id: 1

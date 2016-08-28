@@ -1,0 +1,2 @@
+class ItemFatura < ApplicationRecord
+end

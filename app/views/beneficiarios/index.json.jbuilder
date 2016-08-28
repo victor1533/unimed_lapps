@@ -1,0 +1,1 @@
+json.array! @beneficiarios, partial: 'beneficiarios/beneficiarios', as: :beneficiarios

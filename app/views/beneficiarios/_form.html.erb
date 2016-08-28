@@ -1,0 +1,34 @@
+<%= form_for(beneficiario) do |f| %>
+  <% if beneficiario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(beneficiario.errors.count, "error") %> prohibited this beneficiarios from being saved:</h2>
+
+      <ul>
+      <% beneficiario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :login %>
+    <%= f.text_field :login %>
+  </div>
+
+    <div class="field">
+    <%= f.label :senha %>
+    <%= f.text_field :senha %>
+  </div>
+
+    <div class="field">
+    <%= f.label :num_cartao %>
+    <%= f.text_field :num_cartao %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
