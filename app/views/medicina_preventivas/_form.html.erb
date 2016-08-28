@@ -1,0 +1,17 @@
+<%= form_for(medicina_preventiva) do |f| %>
+  <% if medicina_preventiva.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(medicina_preventiva.errors.count, "error") %> prohibited this medicina_preventiva from being saved:</h2>
+
+      <ul>
+      <% medicina_preventiva.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

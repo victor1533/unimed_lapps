@@ -10,6 +10,7 @@ class FaturasController < ApplicationController
   # GET /faturas/1
   # GET /faturas/1.json
   def show
+  
   end
 
   # GET /faturas/new
@@ -25,7 +26,7 @@ class FaturasController < ApplicationController
   # POST /faturas.json
   def create
     @fatura = Fatura.new(fatura_params)
-
+    @fatura.beneficiario = Beneficiario.first
     respond_to do |format|
       if @fatura.save
         format.html { redirect_to @fatura, notice: 'Fatura was successfully created.' }
@@ -69,6 +70,7 @@ class FaturasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fatura_params
-      params.fetch(:fatura, {})
+      params.require(:fatura).permit!
     end
+            
 end

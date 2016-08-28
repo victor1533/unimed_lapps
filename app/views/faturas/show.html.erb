@@ -2,3 +2,25 @@
 
 <%= link_to 'Edit', edit_fatura_path(@fatura) %> |
 <%= link_to 'Back', faturas_path %>
+<div class="tab-content">
+	<div class="tab-pane animation-fade active" id="todos" role="tabpanel">
+        <ul class="list-group">
+		    <% notice.itens_fatura.each do |item| %>
+                <p class="list-group-item  waves-effect waves-block waves-classic">
+                    <div class="media" >
+                        <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
+	                        <div class="avatar avatar-online">
+    		                    <p style="font-size:20px;"><%= item.data_vencimento.strftime("%b") %></p>
+            	            </div>
+                	    </div>
+                	    <div class="media-body"  style="padding-left:20px;">
+                    	    <h4 class="media-heading">
+                    		    <p style="font-size:20px">R$<%= item.valor_total %></p>
+                    		</h4>
+						</div>
+                	</div>
+                </p>
+            <% end %>
+        </ul>
+	</div>
+</div>

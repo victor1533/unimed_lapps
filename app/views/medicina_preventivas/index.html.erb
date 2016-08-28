@@ -18,25 +18,24 @@
               <div class="tab-pane animation-fade active" id="todos" role="tabpanel">
                 <ul class="list-group">
                   <% current_user.faturas.each do |fatura| %>
-                    <%= link_to fatura_path(fatura) do %>
-
-                      <p class="list-group-item  waves-effect waves-block waves-classic">
-                        <div class="media" >
-                          <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
-                            <div class="avatar avatar-online">
-                            <p style="font-size:20px;"><%= fatura.data_vencimento.strftime("%b") %></p>
-                            </div>
-                          </div>
-                          <div class="media-body"  style="padding-left:20px;">
-                            <h4 class="media-heading">
-                            <p style="font-size:20px">R$<%= fatura.valor_total %></p>
-                        </h4>
-                      
+                    <a href = "#" class="list-group-item  waves-effect waves-block waves-classic">
+                      <div class="media" >
+                        <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
+                          <div class="avatar avatar-online">
+                          <p style="font-size:20px;"><%= fatura.data_vencimento %></p>
                           </div>
                         </div>
-                      </p>
+                        <div class="media-body"  style="padding-left:20px;">
+                          <h4 class="media-heading">
+                          <p style="font-size:20px">R$<%= fatura.valor_total %></p>
+                      </h4>
+                          <p>
+                       <%= fatura.descricao %>                     
+                        </p>
+                        </div>
+                      </div>
+                    </a>
                    <% end %>
-                 <% end %>
 
                 
                 </ul>
@@ -45,24 +44,24 @@
               <div class="tab-pane animation-fade" id="abertos" role="tabpanel">
                 <ul class="list-group">
               <% current_user.faturas.em_aberto.each do |fatura| %>
-                  <%= link_to fatura_path(fatura) do %>
- 
-                    <p class="list-group-item  waves-effect waves-block waves-classic">
+                    <a href = "#" class="list-group-item  waves-effect waves-block waves-classic">
                       <div class="media" >
                         <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
                           <div class="avatar avatar-online">
-                          <p style="font-size:20px;"><%= fatura.data_vencimento.strftime("%b") %></p>
+                          <p style="font-size:20px;"><%= fatura.data_vencimento %></p>
                           </div>
                         </div>
                         <div class="media-body"  style="padding-left:20px;">
                           <h4 class="media-heading">
                           <p style="font-size:20px">R$<%= fatura.valor_total %></p>
                       </h4>
+                          <p>
+                       <%= fatura.descricao %>                     
+                        </p>
                         </div>
                       </div>
-                    </p>
+                    </a>
                    <% end %>
-                 <% end %>
        
                 </ul>
               </div>
@@ -71,24 +70,24 @@
                 <ul class="list-group">
 
                   <% current_user.faturas.pagas.each do |fatura| %>
-                     <%= link_to fatura_path(fatura) do %>
-                 
-                    <p class="list-group-item  waves-effect waves-block waves-classic">
+                    <a href = "#" class="list-group-item  waves-effect waves-block waves-classic">
                       <div class="media" >
                         <div class="media-left" style="padding-right:35px;border-right:1px solid black;">
                           <div class="avatar avatar-online">
-                          <p style="font-size:20px;"><%= fatura.data_vencimento.strftime("%b") %></p>
+                          <p style="font-size:20px;"><%= fatura.data_vencimento %></p>
                           </div>
                         </div>
                         <div class="media-body"  style="padding-left:20px;">
                           <h4 class="media-heading">
                           <p style="font-size:20px">R$<%= fatura.valor_total %></p>
                       </h4>
+                          <p>
+                       <%= fatura.descricao %>                     
+                        </p>
                         </div>
                       </div>
-                    </p>
+                    </a>
                    <% end %>
-                 <% end %>
 
 
                 </ul>

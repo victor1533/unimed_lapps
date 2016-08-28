@@ -11,7 +11,24 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group form-material">
+    <div class="field">
+      <%= f.label :valor_total %>
+      <%= f.text_field :valor_total, :class => "form-control" %>
+    </div>
+
+      <div class="field">
+      <%= f.label :data_emissao %>
+      <%= f.text_field :data_emissao, :class => "form-control" %>
+    </div>
+
+      <div class="field">
+      <%= f.label :data_vencimento %>
+      <%= f.text_field :data_vencimento, :class => "form-control" %>
+    </div>
+
+    <div class="actions" align="center">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>
