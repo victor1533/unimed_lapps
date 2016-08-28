@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :beneficiarios	
   resources :faturas	
+  get '/atendimento' => "atendimento#index"
+  resources :medicos
 end
