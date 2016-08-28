@@ -71,4 +71,5 @@ class FaturasController < ApplicationController
     def fatura_params
       params.fetch(:fatura, {})
     end
+            
 end
